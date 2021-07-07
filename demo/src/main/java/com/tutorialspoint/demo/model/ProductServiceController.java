@@ -28,6 +28,7 @@ public class ProductServiceController {
    }
    @RequestMapping(value = "/products")
    public ResponseEntity<Object> getProduct() {
+	   System.out.println("Build check");
       return new ResponseEntity<>(productRepo.values(), HttpStatus.OK);
    }
    
